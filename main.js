@@ -26,3 +26,12 @@ $("#lb").onclick=e=>{if(e.target.id!="lb"&&e.target.id!="lb-x")return;$("#lb").h
 document.addEventListener("keydown",e=>{if(e.key=="Escape")$("#lb").hidden=true});
 const t=$("#top");addEventListener("scroll",()=>t.hidden=scrollY<500);t.onclick=()=>scrollTo({top:0});
 $("#yr").textContent=new Date().getFullYear();render();
+/* === ANIMATIONS === */
+(function(){
+ const bar=document.createElement("div");bar.id="bar";document.body.prepend(bar);
+ const nav=document.querySelector(".nav");
+ addEventListener("scroll",()=>{const h=document.documentElement;bar.style.width=(scrollY/(h.scrollHeight-innerHeight)*100)+"%";nav.classList.toggle("s",scrollY>30)},{passive:true});
+ if(!("IntersectionObserver" in window))return;
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+ document.querySelectorAll("section:not(.hero) h2,section h3,.card,.stats div,details,.note,#more,#fb-link").forEach((el,i)=>{el.classList.add("reveal");el.style.transitionDelay=(i%4)*90+"ms";io.observe(el)});
+})();
