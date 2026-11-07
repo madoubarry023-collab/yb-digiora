@@ -1,0 +1,30 @@
+:root{--bg:#090B10;--nav:#101B30;--gold:#C9A45C;--gold2:#E5C989;--txt:#fff;--mut:#B8BEC9}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.6 Manrope,Inter,system-ui,sans-serif}
+img{max-width:100%;height:auto}a{color:inherit}
+.nav{position:fixed;top:0;left:0;right:0;z-index:20;background:var(--nav);display:flex;align-items:center;justify-content:space-between;padding:8px 16px;border-bottom:1px solid #C9A45C33}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;color:var(--gold2)}.brand img{border-radius:50%}
+.burger{background:none;border:0;color:var(--gold2);font-size:26px}
+#menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--nav);flex-direction:column;padding:8px 16px}#menu.open{display:flex}
+#menu a{padding:10px 0;text-decoration:none;color:var(--mut)}
+section{padding:72px 18px 24px;max-width:1000px;margin:auto}
+h1{font-size:clamp(28px,6vw,46px);line-height:1.15;margin:16px 0}h2{color:var(--gold2);font-size:28px}h3{margin-top:28px}
+.hero{text-align:center;padding-top:100px}.hero-logo{border-radius:50%;max-width:60vw}
+.btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;background:var(--gold);color:#090B10;font-weight:800;padding:12px 20px;border:0;border-radius:10px;text-decoration:none;cursor:pointer;font-family:inherit;font-size:15px;margin-top:8px}
+.btn.ghost{background:none;color:var(--gold2);border:1px solid var(--gold)}
+.grid2,.grid3{display:grid;gap:16px}@media(min-width:760px){.grid2{grid-template-columns:1fr 1fr}.grid3{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--nav);border:1px solid #C9A45C33;border-radius:14px;padding:20px}.card h3,.card h4{margin-top:0}
+.old{color:var(--mut);text-decoration:line-through;margin:0}.promo{color:var(--gold2);font-size:32px;font-weight:800;margin:0 0 8px}.promo small{display:block;font-size:13px;color:var(--mut);font-weight:400}
+.note{color:var(--mut);font-size:14px}.tag{display:inline-block;font-size:12px;background:#C9A45C22;color:var(--gold2);padding:2px 10px;border-radius:20px;font-weight:600}
+.stats{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}.stats div{background:var(--nav);padding:16px;border-radius:12px;color:var(--mut);font-size:14px}.stats b{display:block;font-size:30px;color:var(--gold2)}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0}.filters button{background:none;color:var(--mut);border:1px solid #B8BEC955;border-radius:20px;padding:6px 14px;font-family:inherit}.filters .on{background:var(--gold);color:#090B10;border-color:var(--gold)}
+.gallery{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+figure{margin:0;background:var(--nav);border-radius:12px;overflow:hidden;cursor:zoom-in}figure img{width:100%;aspect-ratio:3/4;object-fit:contain;background:#000;display:block}figcaption{padding:10px;font-size:13px;color:var(--mut)}
+details{background:var(--nav);border-radius:10px;margin:8px 0;padding:12px 16px}summary{cursor:pointer;font-weight:600}
+footer{text-align:center;padding:40px 18px 100px;color:var(--mut);border-top:1px solid #C9A45C33;margin-top:48px}footer img{border-radius:50%}
+.fab{position:fixed;right:14px;bottom:16px;background:#25D366;color:#042;font-weight:800;padding:12px 16px;border-radius:30px;text-decoration:none;z-index:15;cursor:pointer}
+#top{position:fixed;left:14px;bottom:16px;z-index:15;width:44px;height:44px;border-radius:50%;border:1px solid var(--gold);background:var(--nav);color:var(--gold2)}
+#lb{position:fixed;inset:0;background:#000d;z-index:30;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:16px;overflow:auto}#lb[hidden]{display:none}#lb img{max-height:80vh}#lb-x{position:absolute;top:12px;right:16px;font-size:26px;background:none;border:0;color:#fff}
+@media(min-width:900px){.burger{display:none}#menu{display:flex!important;position:static;flex-direction:row;gap:16px;padding:0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
