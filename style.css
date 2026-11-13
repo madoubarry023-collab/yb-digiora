@@ -250,8 +250,6 @@ details p{padding:0 20px 18px;color:var(--mute);font-size:.93rem;animation:fd .4
 .fab{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));z-index:150;display:inline-flex;align-items:center;gap:10px;height:56px;padding:0 22px 0 18px;border-radius:999px;background:#25D366;color:#fff;font-weight:600;box-shadow:0 14px 34px -10px rgba(37,211,102,.7);transition:transform .3s var(--ease),opacity .4s;animation:fab 3s infinite;cursor:pointer}
 .fab:hover{transform:translateY(-3px) scale(1.04)}
 @keyframes fab{0%,100%{box-shadow:0 14px 34px -10px rgba(37,211,102,.7),0 0 0 0 rgba(37,211,102,.45)}60%{box-shadow:0 14px 34px -10px rgba(37,211,102,.7),0 0 0 16px rgba(37,211,102,0)}}
-#top{position:fixed;left:max(16px,env(safe-area-inset-left));bottom:max(16px,env(safe-area-inset-bottom));z-index:150;width:46px;height:46px;border-radius:50%;border:1px solid rgba(201,164,92,.6);background:var(--navy);color:var(--gold2);font-size:1.2rem;box-shadow:var(--sh)}
-#top[hidden]{display:none}
 
 /* lightbox */
 #lb{position:fixed;inset:0;z-index:400;background:rgba(3,7,18,.94);display:grid;place-items:center;padding:56px 12px 70px}
@@ -357,7 +355,6 @@ html:not(.js) .shead h2::after,.rv.in h2::after{transform:scaleX(1)}
 html.js .fab{opacity:0;transform:translateY(24px) scale(.9);pointer-events:none}
 html.js .fab.show{opacity:1;transform:none;pointer-events:auto}
 html.js .fab.show:hover{transform:translateY(-3px) scale(1.04)}
-#top{left:auto;right:max(16px,env(safe-area-inset-right));bottom:calc(max(16px,env(safe-area-inset-bottom)) + 66px);width:42px;height:42px;font-size:1.1rem}
 @media (max-width:640px){
   .fab{width:56px;height:56px;padding:0;justify-content:center}
   .fab span{display:none}
@@ -381,3 +378,6 @@ html.js .fab.show:hover{transform:translateY(-3px) scale(1.04)}
   .w.gd>span,h2 em{animation:none;background-position:50% 0}
   .glow{display:none}
 }
+
+/* Téléphone/tablette : pas de bouton menu, la navigation se fait en défilant */
+@media (max-width:980px){#menu{display:none!important}}
