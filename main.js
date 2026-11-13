@@ -32,16 +32,17 @@ $("#yr").textContent=new Date().getFullYear();
 
 /* Menu mobile */
 const burger=$("#burger"),menu=$("#menu");
-function setMenu(o){menu.classList.toggle("open",o);burger.setAttribute("aria-expanded",o);burger.setAttribute("aria-label",o?"Fermer le menu":"Ouvrir le menu");document.body.style.overflow=o?"hidden":""}
+function setMenu(o){menu.classList.toggle("open",o);document.documentElement.classList.toggle("menu-open",o);burger.setAttribute("aria-expanded",o);burger.setAttribute("aria-label",o?"Fermer le menu":"Ouvrir le menu");}
 burger.addEventListener("click",()=>setMenu(!menu.classList.contains("open")));
 menu.addEventListener("click",e=>{if(e.target.closest("a"))setMenu(false)});
 addEventListener("resize",()=>{if(innerWidth>980)setMenu(false)});
+document.addEventListener("click",e=>{if(menu.classList.contains("open")&&!e.target.closest("#menu,#burger"))setMenu(false)});
 
 /* Lightbox */
 const lb=$("#lb"),lbi=$("#lb-i"),lbc=$("#lb-c");let lbList=[],lbIdx=0,lastFocus=null;
 function lbShow(){const p=lbList[lbIdx];lbi.src=p.src;lbi.alt=p.t+" — "+p.cap;lbc.textContent=p.t+" · "+p.cap;const m=lbList.length>1;$("#lb-p").hidden=!m;$("#lb-n").hidden=!m}
-function lbOpen(list,i){lbList=list;lbIdx=i;lastFocus=document.activeElement;lbShow();lb.hidden=false;document.body.style.overflow="hidden";$("#lb-x").focus()}
-function lbClose(){lb.hidden=true;document.body.style.overflow=menu.classList.contains("open")?"hidden":"";lbi.removeAttribute("src");if(lastFocus&&lastFocus.focus)lastFocus.focus()}
+function lbOpen(list,i){lbList=list;lbIdx=i;lastFocus=document.activeElement;lbShow();lb.hidden=false;document.documentElement.classList.add("menu-open");$("#lb-x").focus()}
+function lbClose(){lb.hidden=true;if(!menu.classList.contains("open"))document.documentElement.classList.remove("menu-open");lbi.removeAttribute("src");if(lastFocus&&lastFocus.focus)lastFocus.focus()}
 function lbStep(d){lbIdx=(lbIdx+d+lbList.length)%lbList.length;lbShow()}
 $("#lb-x").addEventListener("click",lbClose);$("#lb-p").addEventListener("click",()=>lbStep(-1));$("#lb-n").addEventListener("click",()=>lbStep(1));
 lb.addEventListener("click",e=>{if(e.target===lb||e.target.id==="lb-w")lbClose()});
