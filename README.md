@@ -11,5 +11,5 @@ Site statique (HTML/CSS/JS), hébergé sur GitHub Pages. Tous les fichiers sont 
 - Numéro WhatsApp : `WA` en haut de main.js (affichage du numéro : index.html). Appel : liens `tel:` dans index.html.
 - Lien Facebook : `FACEBOOK_URL` dans main.js.
 - Captures : liste `PROOFS` dans main.js (copier l'image à côté de index.html, ajouter une ligne).
-- Vidéo : `pub-yb-digiora.mp4` (moins de 25 Mo par fichier sur GitHub web). Même nom = remplacée.
+
 - Domaine personnalisé : mettre à jour robots.txt et sitemap.xml avec la nouvelle adresse.
