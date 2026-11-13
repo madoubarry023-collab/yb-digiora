@@ -2,10 +2,13 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<meta name="color-scheme" content="light only"><meta name="theme-color" content="#050b1c"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light only">
+<meta name="theme-color" content="#050b1c">
+<script>document.documentElement.className="js";try{if(sessionStorage.getItem("ybi"))document.documentElement.classList.add("seen")}catch(e){}</script>
 <title>YB Digiora | Création de pages Facebook et Community Management</title>
 <meta name="description" content="YB Digiora accompagne les professionnels dans la création de pages Facebook professionnelles et le Community Management. Découvrez nos services et nos offres.">
-<meta name="keywords" content="YB Digiora, création de page Facebook professionnelle, Community Manager en Guinée, gestion de page Facebook, services digitaux en Guinée">
+<meta name="keywords" content="YB Digiora, création de page Facebook professionnelle, création de page Facebook entreprise, Community Manager en Guinée, Community Management en Guinée, gestion de page Facebook, gestion des réseaux sociaux, services digitaux en Guinée">
 <meta property="og:title" content="YB Digiora | Votre image, notre créativité.">
 <meta property="og:description" content="Création de pages Facebook professionnelles et Community Management.">
 <meta property="og:type" content="website">
@@ -14,83 +17,215 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap">
 <link rel="stylesheet" href="style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"YB Digiora","slogan":"Votre image, notre créativité.","logo":"logo-yb-digiora.png","contactPoint":[{"@type":"ContactPoint","telephone":"+224669690907","contactType":"sales","areaServed":"GN","availableLanguage":"fr"}]}</script>
 </head>
 <body>
-<header class="nav"><a href="#accueil" class="brand"><img src="logo-yb-digiora.png" alt="Logo YB Digiora" width="40" height="40"><span>YB Digiora</span></a>
-<button class="burger" aria-label="Menu" aria-expanded="false">☰</button>
-<nav id="menu"><a href="#apropos">À propos</a><a href="#services">Services</a><a href="#realisations">Réalisations</a><a href="#tarifs">Tarifs</a><a href="#methode">Méthode</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav></header>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12l4.5 4.5L19 7"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></symbol>
+<symbol id="i-badge" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.5 14L7 21l5-3 5 3-1.5-7"/></symbol>
+<symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l2.2 6.3L21 12l-6.8 2.7L12 21l-2.2-6.3L3 12l6.8-2.7L12 3z"/></symbol>
+<symbol id="i-store" viewBox="0 0 24 24"><path d="M3 9l1.5-5h15L21 9M3 9a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0M5 12v8h14v-8M10 20v-5h4v5"/></symbol>
+<symbol id="i-case" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></symbol>
+<symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8zM9 8V6a3 3 0 0 1 6 0v2"/></symbol>
+<symbol id="i-food" viewBox="0 0 24 24"><path d="M3 17h18M5 17a7 7 0 0 1 14 0M12 8V6M10 6h4M2 20h20"/></symbol>
+<symbol id="i-build" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2M10 21v-3h4v3"/></symbol>
+<symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/></symbol>
+<symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.8 1-2.5A6 6 0 0 0 12 3z"/></symbol>
+<symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></symbol>
+<symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4V5z"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5l11 7-11 7V5z" fill="currentColor" stroke="none"/></symbol>
+</defs></svg>
+
+<div id="pre" aria-hidden="true"><i></i><img src="logo-yb-digiora.png" alt="" width="132" height="132"></div>
+<div id="bar" aria-hidden="true"></div>
+
+<header class="nav" id="nav"><div class="nav-in">
+<a href="#accueil" class="brand" aria-label="YB Digiora, accueil"><img src="logo-yb-digiora.png" alt="" width="40" height="40"><span>YB Digiora</span></a>
+<nav id="menu" aria-label="Navigation principale"><a href="#apropos">À propos</a><a href="#services">Services</a><a href="#realisations">Réalisations</a><a href="#tarifs">Tarifs</a><a href="#methode">Méthode</a><a href="#faq">FAQ</a><a href="#contact">Contact</a><a class="btn sm nav-cta" data-wa="Bonjour YB Digiora, je souhaite avoir des informations sur vos services.">WhatsApp</a></nav>
+<button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+</div></header>
 
 <main>
-<section id="accueil" class="hero"><img src="logo-yb-digiora.png" alt="Logo officiel YB Digiora" class="hero-logo" width="220" height="220">
-<h1>Donnez une image professionnelle à votre activité.</h1>
-<p>YB Digiora accompagne les entrepreneurs, commerçants et professionnels dans la création de leur présence sur Facebook et la gestion de leurs réseaux sociaux. Nous mettons notre créativité et notre savoir-faire au service de votre image digitale.</p>
-<div class="btns"><a class="btn" href="#services">Découvrir nos services</a><a class="btn ghost" data-wa="Bonjour YB Digiora, je souhaite avoir des informations sur vos services.">Contacter YB Digiora sur WhatsApp</a></div></section>
+<!-- ACCUEIL -->
+<section id="accueil" class="hero dark">
+<i class="aur a" aria-hidden="true"></i><i class="aur b" aria-hidden="true"></i><i class="glow" aria-hidden="true"></i><i class="dots" aria-hidden="true"></i>
+<div class="c hero-grid">
+<div class="hero-copy">
+<p class="eyebrow hv" style="--k:0">Présence professionnelle sur Facebook</p>
+<h1 aria-label="Donnez une image professionnelle à votre activité."><span class="w" aria-hidden="true"><span style="--i:0">Donnez</span></span> <span class="w" aria-hidden="true"><span style="--i:1">une</span></span> <span class="w gd" aria-hidden="true"><span style="--i:2">image</span></span> <span class="w gd" aria-hidden="true"><span style="--i:3">professionnelle</span></span> <span class="w" aria-hidden="true"><span style="--i:4">à</span></span> <span class="w" aria-hidden="true"><span style="--i:5">votre</span></span> <span class="w" aria-hidden="true"><span style="--i:6">activité.</span></span></h1>
+<p class="lead hv" style="--k:3">YB Digiora accompagne les entrepreneurs, commerçants et professionnels dans la création de leur présence sur Facebook et la gestion de leurs réseaux sociaux. Nous mettons notre créativité et notre savoir-faire au service de votre image digitale.</p>
+<div class="btns hv" style="--k:4"><a class="btn" href="#services">Découvrir nos services</a><a class="btn ghost" data-wa="Bonjour YB Digiora, je souhaite avoir des informations sur vos services.">Contacter YB Digiora sur WhatsApp</a></div>
+<ul class="vals hv" style="--k:5"><li>Professionnalisme</li><li>Confiance</li><li>Créativité</li></ul>
+</div>
+<div class="hero-art" id="art">
+<div class="rings" aria-hidden="true"><i></i><i></i><i></i></div>
+<img class="logo" src="logo-yb-digiora.png" alt="Logo officiel YB Digiora" width="360" height="360" fetchpriority="high">
+<span class="chip c1"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Page professionnelle</span>
+<span class="chip c2"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>WhatsApp connecté</span>
+</div>
+</div>
+<div class="c">
+<ul class="proof" aria-label="Statistiques issues de captures réelles">
+<li class="rv"><b data-to="137" data-suf=" K">137 K</b><span>abonnés · page Vers le mieux-être</span></li>
+<li class="rv"><b data-to="10" data-suf=" M">10 M</b><span>vues · 28 jours</span></li>
+<li class="rv"><b data-to="581005">581 005</b><span>interactions · 28 jours</span></li>
+<li class="rv"><b data-to="16093">16 093</b><span>suivis gagnés · 28 jours</span></li>
+</ul>
+<p class="fine">Statistiques issues de captures réelles de pages Facebook gérées par le responsable de YB Digiora (28 jours glissants, captures du 13 nov. 2026). Aucun résultat n’est garanti.</p>
+</div>
+</section>
 
-<section id="apropos"><h2>À propos de YB Digiora</h2>
-<p>YB Digiora est une activité spécialisée dans la création de pages professionnelles Facebook et le Community Management. Nous aidons les professionnels à mieux présenter leur activité sur les réseaux sociaux, à structurer leur présence digitale et à publier des contenus cohérents avec leur image.</p>
-<div class="grid3"><div class="card"><h3>Professionnalisme</h3></div><div class="card"><h3>Confiance</h3></div><div class="card"><h3>Créativité</h3></div></div></section>
+<div class="tick" aria-hidden="true"><div><span>Votre image, notre créativité ✦ Création de page Facebook ✦ Community Management ✦ Professionnalisme ✦ Confiance ✦ Créativité ✦ </span><span>Votre image, notre créativité ✦ Création de page Facebook ✦ Community Management ✦ Professionnalisme ✦ Confiance ✦ Créativité ✦ </span></div></div>
 
-<section id="services"><h2>Nos services</h2><div class="grid2">
-<article class="card"><h3>Création de page Facebook professionnelle</h3>
-<p class="old">Prix habituel : 250 000 GNF</p><p class="promo">100 000 GNF <small>prix promotionnel actuel (temporaire)</small></p>
-<ul><li>Création d’une page professionnelle Facebook</li><li>Rédaction d’une biographie attractive et professionnelle</li><li>Logo personnalisé selon votre activité</li><li>Photo de couverture adaptée</li><li>Configuration ou reconfiguration de WhatsApp Business à partir de votre numéro</li><li>Connexion de WhatsApp Business à la page</li><li>Remise des accès administrateur et du contrôle de la page, selon les possibilités de Meta</li><li>Configuration de l’environnement Meta Business et accompagnement pour la remise du contrôle du portefeuille Business Manager associé, lorsque c’est possible et après vérification des droits nécessaires</li></ul>
+<!-- À PROPOS -->
+<section id="apropos" class="sec light"><div class="c split">
+<div class="rv"><p class="eyebrow">À propos</p><h2>À propos de <em>YB Digiora</em></h2>
+<p class="lead">YB Digiora est une activité spécialisée dans la création de pages professionnelles Facebook et le Community Management. Nous aidons les professionnels à mieux présenter leur activité sur les réseaux sociaux, à structurer leur présence digitale et à publier des contenus cohérents avec leur image.</p></div>
+<div class="vgrid">
+<div class="vcard card rv"><svg class="ic" aria-hidden="true"><use href="#i-badge"/></svg><h3>Professionnalisme</h3></div>
+<div class="vcard card rv"><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg><h3>Confiance</h3></div>
+<div class="vcard card rv"><svg class="ic" aria-hidden="true"><use href="#i-spark"/></svg><h3>Créativité</h3></div>
+</div></div>
+<div class="c aud-wrap"><h3 class="sub rv">À qui s’adresse ce service</h3>
+<ul class="aud">
+<li class="rv"><svg class="ic" aria-hidden="true"><use href="#i-store"/></svg>Commerçants</li>
+<li class="rv"><svg class="ic" aria-hidden="true"><use href="#i-case"/></svg>Entrepreneurs</li>
+<li class="rv"><svg class="ic" aria-hidden="true"><use href="#i-bag"/></svg>Boutiques</li>
+<li class="rv"><svg class="ic" aria-hidden="true"><use href="#i-food"/></svg>Restaurants</li>
+<li class="rv"><svg class="ic" aria-hidden="true"><use href="#i-build"/></svg>Entreprises</li>
+<li class="rv"><svg class="ic" aria-hidden="true"><use href="#i-gear"/></svg>Prestataires de services</li>
+<li class="rv"><svg class="ic" aria-hidden="true"><use href="#i-bulb"/></svg>Porteurs de projets</li>
+<li class="rv gold"><svg class="ic" aria-hidden="true"><use href="#i-globe"/></svg>Toute personne souhaitant développer son activité en ligne</li>
+</ul></div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="sec light alt"><div class="c">
+<div class="shead rv"><p class="eyebrow">Notre service</p><h2>Nos <em>services</em></h2></div>
+<div class="grid2">
+<article class="card svc rv"><p class="tag">Service 1</p><h3>Création de page Facebook professionnelle</h3>
+<p class="old">Prix habituel : <span>250 000 GNF</span></p>
+<p class="promo"><span class="n" data-to="100000">100 000</span> GNF <small>prix promotionnel actuel (temporaire)</small></p>
+<ul class="ticks"><li>Création d’une page professionnelle Facebook</li><li>Rédaction d’une biographie attractive et professionnelle</li><li>Logo personnalisé selon votre activité</li><li>Photo de couverture adaptée</li><li>Configuration ou reconfiguration de WhatsApp Business à partir de votre numéro</li><li>Connexion de WhatsApp Business à la page</li><li>Remise des accès administrateur et du contrôle de la page, selon les possibilités de Meta</li><li>Configuration de l’environnement Meta Business et accompagnement pour la remise du contrôle du portefeuille Business Manager associé, lorsque c’est possible et après vérification des droits nécessaires</li></ul>
 <p class="note">Vous devez posséder votre propre numéro de téléphone pour WhatsApp Business. Nous ne demandons jamais vos mots de passe personnels.</p>
-<a class="btn" data-wa="Bonjour YB Digiora, je souhaite bénéficier de votre offre de création de page Facebook professionnelle à 100 000 GNF.">Commander ce service sur WhatsApp</a></article>
-<article class="card"><h3>Community Management</h3>
-<p class="old">Prix habituel : 500 000 GNF par mois</p><p class="promo">220 000 GNF <small>par mois · prix promotionnel actuel</small></p>
-<p>Confiez la gestion de votre présence sur les réseaux sociaux à YB Digiora. Nous vous accompagnons dans l’organisation, la planification et la publication de vos contenus afin de maintenir une présence professionnelle et régulière.</p>
-<ul><li>3 publications par jour</li><li>2 à 3 vidéos par semaine, fournies par le client</li><li>Analyse des vidéos et recommandations d’amélioration</li><li>Rédaction des légendes et descriptions</li><li>Planification, programmation et publication</li><li>Visuels simples selon les besoins convenus</li><li>Suivi des performances et bilan mensuel</li></ul>
+<a class="btn full" data-wa="Bonjour YB Digiora, je souhaite bénéficier de votre offre de création de page Facebook professionnelle à 100 000 GNF.">Commander ce service sur WhatsApp</a></article>
+<article class="card svc rv"><p class="tag">Service 2</p><h3>Community Management</h3>
+<p class="old">Prix habituel : <span>500 000 GNF par mois</span></p>
+<p class="promo"><span class="n" data-to="220000">220 000</span> GNF <small>par mois · prix promotionnel actuel</small></p>
+<p class="lead-s">Confiez la gestion de votre présence sur les réseaux sociaux à YB Digiora. Nous vous accompagnons dans l’organisation, la planification et la publication de vos contenus afin de maintenir une présence professionnelle et régulière.</p>
+<ul class="ticks"><li>3 publications par jour</li><li>2 à 3 vidéos par semaine, fournies par le client</li><li>Analyse des vidéos et recommandations d’amélioration</li><li>Rédaction des légendes et descriptions</li><li>Planification, programmation et publication</li><li>Visuels simples selon les besoins convenus</li><li>Suivi des performances et bilan mensuel</li></ul>
 <p class="note">Tournage et montage vidéo non inclus, sauf accord distinct.</p>
-<a class="btn" data-wa="Bonjour YB Digiora, je souhaite avoir des informations sur votre offre de Community Management à 220 000 GNF par mois.">Demander un accompagnement sur WhatsApp</a></article></div></section>
+<a class="btn full" data-wa="Bonjour YB Digiora, je souhaite avoir des informations sur votre offre de Community Management à 220 000 GNF par mois.">Demander un accompagnement sur WhatsApp</a></article>
+</div></div></section>
 
-<section id="video" hidden><h2>Notre vidéo</h2><div class="vp" id="vp"><img id="vposter" src="poster-pub.jpg" alt="Aperçu de la vidéo publicitaire YB Digiora" loading="lazy"><button id="vplay" aria-label="Lire la vidéo">▶</button></div></section>
+<!-- VIDÉO -->
+<section id="video" class="sec dark"><i class="glow" aria-hidden="true"></i><div class="c">
+<div class="shead rv center"><p class="eyebrow">En vidéo</p><h2>Découvrez <em>YB Digiora</em></h2></div>
+<div class="player rv" id="player">
+<video id="adv" preload="none" playsinline controls poster="poster-pub.jpg" aria-label="Vidéo publicitaire YB Digiora"><source src="pub-yb-digiora.mp4" type="video/mp4">Votre navigateur ne lit pas cette vidéo.</video>
+<button class="play" id="play" type="button" aria-label="Lire la vidéo"><svg class="ic" aria-hidden="true"><use href="#i-play"/></svg></button>
+<span class="vtag">Vidéo · 1 min</span>
+</div>
+</div></section>
 
-<section id="realisations"><h2>Nos réalisations, preuves et performances</h2>
-<h3>Vers le mieux-être <span class="tag">Projet personnel géré par le responsable</span></h3>
-<div class="stats"><div><b>137 K</b>abonnés (en-tête de la page)</div><div><b>11,2 K</b>followers en plus · 28 jours (10 oct – 6 nov)</div><div><b>9 617</b>suivis gagnés · 28 jours (Analytics, dates non visibles)</div></div>
-<p class="note">Les deux chiffres de gain d’abonnés viennent de deux écrans différents et ne s’additionnent pas.</p>
-<a class="btn ghost" id="fb-link" href="https://www.facebook.com/share/1FCrgtTNfP/" target="_blank" rel="noopener">Voir la page Facebook</a>
-<div class="filters" id="filters"></div><div class="gallery" id="gallery"></div><button class="btn ghost" id="more" hidden>Voir plus</button>
+<!-- RÉALISATIONS -->
+<section id="realisations" class="sec light"><div class="c">
+<div class="shead rv"><p class="eyebrow">Nos preuves</p><h2>Nos réalisations, preuves et <em>performances</em></h2></div>
+<h3 class="proj rv">Vers le mieux-être <span class="tag">Projet personnel géré par le responsable</span></h3>
+<div class="stats">
+<div class="rv"><b data-to="137" data-suf=" K">137 K</b>abonnés (en-tête de la page)</div>
+<div class="rv"><b data-to="10" data-suf=" M">10 M</b>vues · 28 jours (capture du 13 nov. 2026)</div>
+<div class="rv"><b data-to="581005">581 005</b>interactions · 28 jours (même capture)</div>
+<div class="rv"><b data-to="16093">16 093</b>suivis gagnés · 28 jours (même capture)</div>
+</div>
+<p class="note rv">Chiffres de 28 jours glissants, issus de captures différentes : ils ne s’additionnent pas. Le nom de la page n’apparaît pas sur les captures Analytics.</p>
+<a class="btn ghost-l rv" id="fb-link" href="https://www.facebook.com/share/1FCrgtTNfP/" target="_blank" rel="noopener">Voir la page Facebook</a>
+<div class="filters" id="filters" role="group" aria-label="Filtrer les captures"></div>
+<div class="gallery" id="gallery"></div>
+<div class="more"><button class="btn ghost-l" id="more" type="button" hidden>Voir plus</button></div>
+<h3 class="sub rv">Autres expériences</h3>
+<div class="grid2">
+<div class="card l rv"><span class="tag">Collaboration passée</span><h4>Fresh Junior</h4><p>Page Facebook d’un artiste, existant bien avant l’intervention du responsable, qui a participé à sa gestion. L’audience actuelle (200 K+) n’est pas attribuée à son travail ; aucun chiffre de performance n’est présenté.</p></div>
+<div class="card l rv"><span class="tag">Projet personnel · données historiques</span><h4>Maadou YB</h4><p>Page créée en juin 2026 et gérée seule. Sur 90 jours (période du portfolio) : 1,6 M de vues, 531 K spectateurs, 98 K interactions, statistiques globales de la page sur une base très courte. Chiffres historiques, non actuels.</p></div>
+</div>
+<p class="note rv">Aucune de ces pages n’est présentée comme une page cliente de YB Digiora. Aucun résultat n’est garanti.</p>
+</div></section>
 
-<h3>Autres expériences</h3><div class="grid3">
-<div class="card"><span class="tag">Collaboration passée</span><h4>Fresh Junior</h4><p>Page Facebook d’un artiste, existant bien avant l’intervention du responsable, qui a participé à sa gestion. L’audience actuelle (200 K+) n’est pas attribuée à son travail ; aucun chiffre de performance n’est présenté.</p></div>
-<div class="card"><span class="tag">Projet personnel · données historiques</span><h4>Maadou YB</h4><p>Page créée en juin 2026 et gérée seule. Sur 90 jours (période du portfolio) : 1,6 M de vues, 531 K spectateurs, 98 K interactions, statistiques globales de la page sur une base très courte. Chiffres historiques, non actuels.</p></div>
-<div class="card"><span class="tag">Déclaré, non vérifié</span><h4>Historique Vers le mieux-être</h4><p>Environ 10 M de vues par mois à certaines périodes, d’après les statistiques consultées à l’époque. Aucun justificatif disponible.</p></div></div>
-<p class="note">Aucune de ces pages n’est présentée comme une page cliente de YB Digiora. Aucun résultat n’est garanti.</p></section>
+<!-- PORTFOLIO DÉFILANT -->
+<section id="portfolio" class="sec dark"><div class="c">
+<div class="shead rv"><p class="eyebrow">Portfolio</p><h2>Pages et statistiques <em>réelles</em></h2>
+<p class="lead-d">Captures authentiques, non retouchées. Touchez une capture pour l’agrandir, ou mettez le défilement en pause.</p>
+<button class="btn ghost" id="mqp" type="button">Pause</button></div></div>
+<div class="mq" id="mq"></div>
+</section>
 
-<section id="portfolio"><div class="wrap"><h2>Portfolio : pages et statistiques réelles</h2><p class="note">Captures authentiques, non retouchées. Touche une capture pour l’agrandir ; survole ou maintiens pour mettre en pause.</p><button class="btn ghost" id="mqp" type="button">Pause</button></div><div class="mq" id="mq"></div></section>
+<!-- TARIFS -->
+<section id="tarifs" class="sec light alt"><div class="c">
+<div class="shead rv"><p class="eyebrow">Nos offres</p><h2>Tarifs et <em>offres</em></h2></div>
+<div class="grid2">
+<div class="card pr rv"><span class="tag">Prix promotionnel actuel</span><h3>Création de page Facebook</h3><p class="old">Prix habituel : <span>250 000 GNF</span></p><p class="promo"><span class="n" data-to="100000">100 000</span> GNF</p><a class="btn full" data-wa="Bonjour YB Digiora, je souhaite bénéficier de votre offre de création de page Facebook professionnelle à 100 000 GNF.">Commander</a></div>
+<div class="card pr rv"><span class="tag">Prix promotionnel actuel</span><h3>Community Management</h3><p class="old">Prix habituel : <span>500 000 GNF par mois</span></p><p class="promo"><span class="n" data-to="220000">220 000</span> GNF <small>par mois</small></p><a class="btn full" data-wa="Bonjour YB Digiora, je souhaite avoir des informations sur votre offre de Community Management à 220 000 GNF par mois.">Demander</a></div>
+</div>
+<p class="note rv">La publicité Facebook et le boostage ne sont pas inclus.</p>
+</div></section>
 
-<section id="tarifs"><h2>Tarifs et offres</h2><div class="grid2">
-<div class="card"><h3>Création de page Facebook</h3><p class="old">250 000 GNF</p><p class="promo">100 000 GNF</p><a class="btn" data-wa="Bonjour YB Digiora, je souhaite bénéficier de votre offre de création de page Facebook professionnelle à 100 000 GNF.">Commander</a></div>
-<div class="card"><h3>Community Management</h3><p class="old">500 000 GNF / mois</p><p class="promo">220 000 GNF / mois</p><a class="btn" data-wa="Bonjour YB Digiora, je souhaite avoir des informations sur votre offre de Community Management à 220 000 GNF par mois.">Demander</a></div></div>
-<p class="note">La publicité Facebook et le boostage ne sont pas inclus.</p></section>
+<!-- MÉTHODE -->
+<section id="methode" class="sec light"><div class="c">
+<div class="shead rv"><p class="eyebrow">Comment commander ?</p><h2>Notre méthode de <em>travail</em></h2></div>
+<div class="grid2">
+<div class="card l rv"><h3>Création de page</h3><ol class="steps"><li>Prise de contact</li><li>Présentation de vos besoins</li><li>Collecte des informations nécessaires</li><li>Paiement intégral et vérification</li><li>Création et configuration de la page</li><li>Vérification du travail</li><li>Remise des accès et livraison</li></ol></div>
+<div class="card l rv"><h3>Community Management</h3><ol class="steps"><li>Prise de contact</li><li>Définition des besoins</li><li>Organisation des contenus</li><li>Validation</li><li>Suivi mensuel</li></ol></div>
+</div>
+<p class="callout rv"><b>Délai annoncé :</b> moins de 8 heures de travail pendant les jours ouvrables, à compter de la vérification du paiement intégral et de la réception de toutes les informations. Après la fermeture, le décompte reprend à 9 h le prochain jour ouvrable.</p>
+<p class="pay rv"><span>Moyens de paiement</span><i>Orange Money</i><i>MTN Mobile Money</i><i>Paiement marchand</i><i>Paiement bancaire</i></p>
+</div></section>
 
-<section id="methode"><h2>Notre méthode de travail</h2><div class="grid2">
-<div class="card"><h3>Création de page</h3><ol><li>Prise de contact</li><li>Présentation de vos besoins</li><li>Collecte des informations nécessaires</li><li>Paiement intégral et vérification</li><li>Création et configuration de la page</li><li>Vérification du travail</li><li>Remise des accès et livraison</li></ol><p class="note">Délai annoncé : moins de 8 heures de travail pendant les jours ouvrables, à compter de la vérification du paiement intégral et de la réception de toutes les informations. Après la fermeture, le décompte reprend à 9 h le prochain jour ouvrable.</p></div>
-<div class="card"><h3>Community Management</h3><ol><li>Prise de contact</li><li>Définition des besoins</li><li>Organisation des contenus</li><li>Validation</li><li>Suivi mensuel</li></ol></div></div></section>
+<!-- FAQ -->
+<section id="faq" class="sec light alt"><div class="c faq-grid">
+<div class="faq-head rv"><p class="eyebrow">Questions</p><h2>Questions <em>fréquentes</em></h2><p class="lead">Une autre question ? Écrivez-nous directement.</p><a class="btn ghost-l" data-wa="Bonjour YB Digiora, j’ai une question.">Poser une question</a></div>
+<div id="faq-list">
+<details class="rv"><summary>Que comprend la création d’une page Facebook professionnelle ?</summary><p>Page, biographie, logo, couverture, WhatsApp Business, connexion à la page, remise des accès et accompagnement Meta Business (voir le détail dans la section Services).</p></details>
+<details class="rv"><summary>Le logo et la couverture sont-ils inclus ?</summary><p>Oui : un logo personnalisé et une photo de couverture adaptée.</p></details>
+<details class="rv"><summary>WhatsApp Business est-il configuré ?</summary><p>Oui, configuré ou reconfiguré à partir de votre numéro, puis connecté à la page.</p></details>
+<details class="rv"><summary>Dois-je posséder mon propre numéro de téléphone ?</summary><p>Oui. Nous ne demandons jamais vos mots de passe personnels.</p></details>
+<details class="rv"><summary>Quel est le tarif de création d’une page ?</summary><p>100 000 GNF (prix promotionnel actuel, temporaire) au lieu de 250 000 GNF.</p></details>
+<details class="rv"><summary>Combien de temps faut-il pour recevoir ma page ?</summary><p>Moins de 8 heures de travail en jours ouvrables, après paiement intégral vérifié et réception de toutes les informations. Jamais de livraison immédiate.</p></details>
+<details class="rv"><summary>Comment se déroule le paiement ?</summary><p>Le paiement est intégral et vérifié avant le début du travail (Orange Money, MTN Mobile Money, paiement marchand ou paiement bancaire). Les modalités vous sont communiquées sur WhatsApp.</p></details>
+<details class="rv"><summary>Le Community Management est-il facturé par mois ?</summary><p>Oui : 220 000 GNF par mois (prix promotionnel actuel), au lieu de 500 000 GNF par mois.</p></details>
+<details class="rv"><summary>Le montage vidéo est-il inclus ?</summary><p>Non, ni le tournage, sauf accord distinct.</p></details>
+<details class="rv"><summary>La publicité Facebook et le boostage sont-ils inclus ?</summary><p>Non.</p></details>
+<details class="rv"><summary>Puis-je récupérer le contrôle de ma page ?</summary><p>Les accès administrateur vous sont remis, selon les possibilités de Meta. Pour le portefeuille Business Manager, cela dépend des droits et de la vérification nécessaires.</p></details>
+<details class="rv"><summary>Comment contacter YB Digiora ?</summary><p>Par WhatsApp au +224 669 69 09 07 ou par téléphone au +224 629 27 28 31.</p></details>
+</div></div></section>
 
-<section id="faq"><h2>Questions fréquentes</h2><div id="faq-list">
-<details><summary>Que comprend la création d’une page Facebook professionnelle ?</summary><p>Page, biographie, logo, couverture, WhatsApp Business, connexion à la page, remise des accès et accompagnement Meta Business (voir le détail dans la section Services).</p></details>
-<details><summary>Le logo et la couverture sont-ils inclus ?</summary><p>Oui : un logo personnalisé et une photo de couverture adaptée.</p></details>
-<details><summary>WhatsApp Business est-il configuré ?</summary><p>Oui, configuré ou reconfiguré à partir de votre numéro, puis connecté à la page.</p></details>
-<details><summary>Dois-je posséder mon propre numéro de téléphone ?</summary><p>Oui. Nous ne demandons jamais vos mots de passe personnels.</p></details>
-<details><summary>Quel est le tarif de création d’une page ?</summary><p>100 000 GNF (prix promotionnel actuel, temporaire) au lieu de 250 000 GNF.</p></details>
-<details><summary>Combien de temps faut-il pour recevoir ma page ?</summary><p>Moins de 8 heures de travail en jours ouvrables, après paiement intégral vérifié et réception de toutes les informations. Jamais de livraison immédiate.</p></details>
-<details><summary>Comment se déroule le paiement ?</summary><p>Le paiement est intégral et vérifié avant le début du travail. Les modalités vous sont communiquées sur WhatsApp.</p></details>
-<details><summary>Le Community Management est-il facturé par mois ?</summary><p>Oui : 220 000 GNF par mois (prix promotionnel actuel), au lieu de 500 000 GNF par mois.</p></details>
-<details><summary>Le montage vidéo est-il inclus ?</summary><p>Non, ni le tournage, sauf accord distinct.</p></details>
-<details><summary>La publicité Facebook et le boostage sont-ils inclus ?</summary><p>Non.</p></details>
-<details><summary>Puis-je récupérer le contrôle de ma page ?</summary><p>Les accès administrateur vous sont remis, selon les possibilités de Meta. Pour le portefeuille Business Manager, cela dépend des droits et de la vérification nécessaires.</p></details>
-<details><summary>Comment contacter YB Digiora ?</summary><p>Par WhatsApp au +224 669 69 09 07 ou par téléphone au +224 629 27 28 31.</p></details></div></section>
-
-<section id="contact"><h2>Contact</h2><p>WhatsApp : <b>+224 669 69 09 07</b><br>Téléphone : <b>+224 629 27 28 31</b></p><div class="btns"><a class="btn" data-wa="Bonjour YB Digiora, je souhaite avoir des informations sur vos services.">Discuter sur WhatsApp</a><a class="btn ghost" href="tel:+224629272831">Appeler directement</a></div></section>
+<!-- CONTACT -->
+<section id="contact" class="sec dark"><i class="glow" aria-hidden="true"></i><div class="c contact-grid">
+<div class="rv"><p class="eyebrow">Contacter YB Digiora</p><h2>Donnez à votre activité une <em>présence professionnelle</em></h2>
+<p class="lead-d">Écrivez-nous sur WhatsApp pour passer commande ou poser vos questions.</p></div>
+<div class="ccard rv">
+<div class="cline"><span class="wa" aria-hidden="true"><svg class="ic"><use href="#i-chat"/></svg></span><div><small>WhatsApp</small><b>+224 669 69 09 07</b></div></div>
+<div class="cline"><span class="ph" aria-hidden="true"><svg class="ic"><use href="#i-phone"/></svg></span><div><small>Téléphone</small><b>+224 629 27 28 31</b></div></div>
+<div class="btns"><a class="btn" data-wa="Bonjour YB Digiora, je souhaite avoir des informations sur vos services.">Discuter sur WhatsApp</a><a class="btn ghost" href="tel:+224629272831">Appeler directement</a></div>
+</div></div></section>
 </main>
 
-<footer><img src="logo-yb-digiora.png" alt="Logo YB Digiora" width="64" height="64" loading="lazy"><p><b>YB Digiora</b> – Votre image, notre créativité. Des solutions digitales pensées pour valoriser votre activité.</p><nav><a href="#services">Services</a> · <a href="#realisations">Réalisations</a> · <a href="#tarifs">Tarifs</a> · <a href="#faq">FAQ</a> · <a href="#contact">Contact</a></nav><p>© <span id="yr">2026</span> YB Digiora. Tous droits réservés.</p></footer>
+<footer class="foot dark"><div class="c foot-in">
+<div class="foot-brand"><img src="logo-yb-digiora.png" alt="Logo YB Digiora" width="64" height="64" loading="lazy"><p><b>YB Digiora</b> – Votre image, notre créativité. Des solutions digitales pensées pour valoriser votre activité.</p></div>
+<nav aria-label="Pied de page"><a href="#services">Services</a><a href="#realisations">Réalisations</a><a href="#tarifs">Tarifs</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav>
+<p class="copy">© <span id="yr">2026</span> YB Digiora. Tous droits réservés.</p>
+</div></footer>
 
-<a class="fab" data-wa="Bonjour YB Digiora, je souhaite avoir des informations sur vos services." aria-label="WhatsApp">WhatsApp</a>
-<button id="top" aria-label="Haut de page" hidden>↑</button>
-<div id="lb" hidden><button id="lb-x" aria-label="Fermer">✕</button><img alt=""><p></p></div>
+<a class="fab" id="fab" data-wa="Bonjour YB Digiora, je souhaite avoir des informations sur vos services." aria-label="Écrire sur WhatsApp"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg><span>WhatsApp</span></a>
+<button id="top" type="button" aria-label="Retour en haut" hidden>↑</button>
+<div id="lb" hidden role="dialog" aria-modal="true" aria-label="Capture agrandie">
+<button class="lb-x" id="lb-x" type="button" aria-label="Fermer">✕</button>
+<button class="lb-n prev" id="lb-p" type="button" aria-label="Précédente">‹</button>
+<button class="lb-n next" id="lb-n" type="button" aria-label="Suivante">›</button>
+<div class="lb-w" id="lb-w"><img id="lb-i" alt=""></div>
+<p class="lb-c" id="lb-c"></p>
+</div>
 <script src="main.js"></script>
 </body>
 </html>

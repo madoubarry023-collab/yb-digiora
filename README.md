@@ -1,7 +1,15 @@
-# Mise à jour du site YB Digiora (v3)
-Tous les fichiers sont à plat (même niveau). Envoie-les dans le dépôt GitHub : ⋯ > Upload files > Commit changes. Les fichiers du même nom sont remplacés.
-- Remplacés : index.html, style.css, main.js
-- Nouveaux : fb-contenus-1.jpg, fb-contenus-2.jpg, fb-contenus-3.jpg, poster-pub.jpg
-- Numéros : WhatsApp dans main.js (WA) et dans index.html (texte) ; appel dans le lien tel: de index.html.
-- Vidéo : pub-yb-digiora.mp4 (déjà branchée via VIDEO_SRC dans main.js). Pour la changer, envoie une autre vidéo de moins de 25 Mo et modifie VIDEO_SRC.
-- Portfolio : liste des captures dans main.js (P et ROWS).
+# Site YB Digiora (v6)
+
+Site statique (HTML/CSS/JS), hébergé sur GitHub Pages. Tous les fichiers sont au même niveau (à plat).
+
+## Mettre à jour
+1. Extraire le zip sur ton téléphone/PC.
+2. Dans le dépôt GitHub : Add file > Upload files > envoyer **tous les fichiers extraits** (pas le zip).
+3. Commit changes, attendre 1 à 2 minutes, tester dans un onglet privé.
+
+## Où modifier
+- Numéro WhatsApp : `WA` en haut de main.js (affichage du numéro : index.html). Appel : liens `tel:` dans index.html.
+- Lien Facebook : `FACEBOOK_URL` dans main.js.
+- Captures : liste `PROOFS` dans main.js (copier l'image à côté de index.html, ajouter une ligne).
+- Vidéo : `pub-yb-digiora.mp4` (moins de 25 Mo par fichier sur GitHub web). Même nom = remplacée.
+- Domaine personnalisé : mettre à jour robots.txt et sitemap.xml avec la nouvelle adresse.
